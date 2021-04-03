@@ -4,9 +4,9 @@ from flask import Flask, render_template, json
 
 app = Flask(__name__)
 
-database = MySQLdb.connect(host = "localhost", 
-	user = "anychart_user",
-	passwd = "anychart_pass", 
+database = MySQLdb.connect(host = "testmysqldb9595.mysql.database.azure.com", 
+	user = "sahil@testmysqldb9595",
+	passwd = "Root@9595", 
 	db = "anychart_db", 
 	cursorclass = MySQLdb.cursors.DictCursor)
 cursor = database.cursor()
